@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+body{
+    background: url(https://miro.medium.com/v2/resize:fit:720/format:webp/1*Kzxpiz2tKblePe8YL7v9yA.gif) no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#calculator{
+    max-width: 360px;
+    background-color: #7cd5f3;
+    border-radius: 13px;
+    padding: 18px;
+    box-shadow: 10px 10px black;
+}
+
+#display{
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 3px;
+    color: #87CEEB;
+    background: black;
+    border: none;
+    box-sizing: border-box;
+}
+
+button{
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 10px 5px;
+    border: none;
+    float: left;
+    background-color: #f5f5f5;
+    color: #000000;
+    box-shadow: 3px 3px #000000;
+}
+
+.operator{
+    color: black;
+    background-color: #00BFFF;
+}
+
+#ac{
+    color: #ffffff;
+}
+
+.equal{
+    width: calc(50% - 12px);
+    background-color: #4682B4;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    transform:  translate3d(3px, 10%, 1em);
+    box-shadow: none;
+}
+
+h1{
+    font-family: sans-serif;
+    color: #000000;
+}
+
+/* footer */
+
+.footer {
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:0;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.footer-btn a {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid .15rem #006181;
+    text-decoration: none;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 2em;
+    position: relative;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.footer-btn a::before {
+    background: #006181;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.footer-btn a:hover::before {
+    width: 100%;
+}
+
+.footer-text p {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight:bolder;
+    color: #ffffff;
+}
+
+.footer-text a {
+    text-decoration: none;
+}  
+
+.footer-text span{
+    color: #1b8bb1;
+}
+
+.footer-text span:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
