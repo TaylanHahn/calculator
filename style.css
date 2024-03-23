@@ -13,6 +13,7 @@ body{
 }
 
 #calculator{
+    margin-top:5%;
     max-width: 360px;
     background-color: #7cd5f3;
     border-radius: 13px;
