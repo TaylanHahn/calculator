@@ -1,3 +1,8 @@
+window.onload = function() {
+    document.body.style.zoom = "80%";
+};
+
+
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll("button");
 
